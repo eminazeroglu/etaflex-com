@@ -1,0 +1,27 @@
+.card {
+    @apply border-color shadow-soft rounded-[8px] overflow-hidden dark:text-white select-none;
+}
+
+.card.card-border {
+    @apply !border !border-color !border-solid
+}
+
+.card .ant-card-head-title {
+    @apply whitespace-normal
+}
+
+.card .ant-card-head {
+     @apply min-h-[auto] p-4 theme-text border-color bg-transparent;
+
+     .ant-card-head-title {
+         @apply text-lg font-semibold
+     }
+ }
+
+.card .ant-card-body {
+    @apply p-4
+}
+
+.card .card-foot {
+    @apply flex mt-[16px]
+}

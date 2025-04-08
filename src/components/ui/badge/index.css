@@ -1,0 +1,232 @@
+/* Əsas status komponenti */
+.status {
+    @apply px-2 h-6 inline-flex items-center text-xs rounded-full whitespace-nowrap;
+}
+
+/* Variant modifikatorları */
+.status--outline {
+    @apply border;
+}
+
+.status--filled {
+    @apply bg-opacity-10;
+}
+
+/* İş statusları (State) */
+.status--active {
+    @apply text-[#2ecc71] dark:text-[#52d694];
+}
+.status--active.status--outline {
+    @apply border-[#27ae60] dark:border-[#3ec47e];
+}
+.status--active.status--filled {
+    @apply bg-[#e9f7ef] text-[#186f3d] dark:bg-[#1e4d33] dark:text-[#b3e8cb];
+}
+
+.status--inactive {
+    @apply text-[#7f8c8d] dark:text-[#95a5a6];
+}
+.status--inactive.status--outline {
+    @apply border-[#636e72] dark:border-[#7f8c8d];
+}
+.status--inactive.status--filled {
+    @apply bg-[#ecf0f1] text-[#2d3436] dark:bg-[#2d3436] dark:text-[#bdc3c7];
+}
+
+/* Proses statusları (Process) */
+.status--pending {
+    @apply text-[#3498db] dark:text-[#5dade2];
+}
+.status--pending.status--outline {
+    @apply border-[#2980b9] dark:border-[#4798cc];
+}
+.status--pending.status--filled {
+    @apply bg-[#ebf5fb] text-[#1f618d] dark:bg-[#1b3e5d] dark:text-[#a9cce3];
+}
+
+.status--processing {
+    @apply text-[#8e44ad] dark:text-[#a569bd];
+}
+.status--processing.status--outline {
+    @apply border-[#732d91] dark:border-[#8e44ad];
+}
+.status--processing.status--filled {
+    @apply bg-[#f5eef8] text-[#4a235a] dark:bg-[#3c1e4b] dark:text-[#d2b4de];
+}
+
+/* İcazə statusları (Permission) */
+.status--approved {
+    @apply text-[#16a085] dark:text-[#1cccaa];
+}
+.status--approved.status--outline {
+    @apply border-[#138d75] dark:border-[#16a085];
+}
+.status--approved.status--filled {
+    @apply bg-[#e8f6f3] text-[#0e6251] dark:bg-[#144d42] dark:text-[#a3e4d7];
+}
+
+.status--rejected {
+    @apply text-[#e74c3c] dark:text-[#ff7066];
+}
+.status--rejected.status--outline {
+    @apply border-[#c0392b] dark:border-[#e74c3c];
+}
+.status--rejected.status--filled {
+    @apply bg-[#fdedec] text-[#922b21] dark:bg-[#5c2520] dark:text-[#f5b7b1];
+}
+
+/* Məhdudiyyət statusları (Restriction) */
+.status--blocked {
+    @apply text-[#9b59b6] dark:text-[#bb86d1];
+}
+.status--blocked.status--outline {
+    @apply border-[#8e44ad] dark:border-[#9b59b6];
+}
+.status--blocked.status--filled {
+    @apply bg-[#f5eef8] text-[#5e366e] dark:bg-[#3e2947] dark:text-[#d7bde2];
+}
+
+.status--suspended {
+    @apply text-[#d4a017] dark:text-[#e8b923];
+}
+.status--suspended.status--outline {
+    @apply border-[#c99212] dark:border-[#d4a017];
+}
+.status--suspended.status--filled {
+    @apply bg-[#fef6e4] text-[#8e6710] dark:bg-[#5c4611] dark:text-[#f9e4a3];
+}
+
+/* Arxiv statusları (Archive) */
+.status--archived {
+    @apply text-[#5d6d7e] dark:text-[#8597a8];
+}
+.status--archived.status--outline {
+    @apply border-[#4b5a69] dark:border-[#5d6d7e];
+}
+.status--archived.status--filled {
+    @apply bg-[#ebedef] text-[#34495e] dark:bg-[#2e3945] dark:text-[#b8c5d3];
+}
+
+/* Ödəniş statusları (Payment) */
+.status--paid {
+    @apply text-[#27ae60] dark:text-[#3ec47e];
+}
+.status--paid.status--outline {
+    @apply border-[#219653] dark:border-[#27ae60];
+}
+.status--paid.status--filled {
+    @apply bg-[#e9f7ef] text-[#186f3d] dark:bg-[#1e4d33] dark:text-[#b3e8cb];
+}
+
+.status--unpaid {
+    @apply text-[#e67e22] dark:text-[#f39c12];
+}
+.status--unpaid.status--outline {
+    @apply border-[#d35400] dark:border-[#e67e22];
+}
+.status--unpaid.status--filled {
+    @apply bg-[#fef2e8] text-[#9c5716] dark:bg-[#5c3a19] dark:text-[#f7c698];
+}
+
+/* Vaxt statusları (Time) */
+.status--expired {
+    @apply text-[#c0392b] dark:text-[#e74c3c];
+}
+.status--expired.status--outline {
+    @apply border-[#a93226] dark:border-[#c0392b];
+}
+.status--expired.status--filled {
+    @apply bg-[#fdedec] text-[#78281f] dark:bg-[#5c2520] dark:text-[#f5b7b1];
+}
+
+.status--scheduled {
+    @apply text-[#1abc9c] dark:text-[#2ee6c1];
+}
+.status--scheduled.status--outline {
+    @apply border-[#16a085] dark:border-[#1abc9c];
+}
+.status--scheduled.status--filled {
+    @apply bg-[#e8f6f3] text-[#0e6251] dark:bg-[#144d42] dark:text-[#a3e4d7];
+}
+
+/* Təcililik statusları (Priority) */
+.status--urgent {
+    @apply text-[#e91e63] dark:text-[#f06292];
+}
+.status--urgent.status--outline {
+    @apply border-[#d81b60] dark:border-[#e91e63];
+}
+.status--urgent.status--filled {
+    @apply bg-[#fce4ec] text-[#ad1457] dark:bg-[#5c1e31] dark:text-[#f8bbd0];
+}
+
+.status--high {
+    @apply text-[#f1c40f] dark:text-[#f4d03f];
+}
+.status--high.status--outline {
+    @apply border-[#d4ac0d] dark:border-[#f1c40f];
+}
+.status--high.status--filled {
+    @apply bg-[#fef9e7] text-[#9e7e0a] dark:bg-[#5c4d0b] dark:text-[#f9e79f];
+}
+
+.status--medium {
+    @apply text-[#e59866] dark:text-[#f0b27a];
+}
+.status--medium.status--outline {
+    @apply border-[#d68910] dark:border-[#e59866];
+}
+.status--medium.status--filled {
+    @apply bg-[#fef2e8] text-[#a9650f] dark:bg-[#5c3a19] dark:text-[#f7d4b7];
+}
+
+.status--low {
+    @apply text-[#3498db] dark:text-[#5dade2];
+}
+.status--low.status--outline {
+    @apply border-[#2980b9] dark:border-[#3498db];
+}
+.status--low.status--filled {
+    @apply bg-[#ebf5fb] text-[#1f618d] dark:bg-[#1b3e5d] dark:text-[#a9cce3];
+}
+
+/* Tamamlanma statusları (Completion) */
+.status--resolved {
+    @apply text-[#8e44ad] dark:text-[#a569bd];
+}
+.status--resolved.status--outline {
+    @apply border-[#732d91] dark:border-[#8e44ad];
+}
+.status--resolved.status--filled {
+    @apply bg-[#f5eef8] text-[#4a235a] dark:bg-[#3c1e4b] dark:text-[#d2b4de];
+}
+
+.status--closed {
+    @apply text-[#616161] dark:text-[#9e9e9e];
+}
+.status--closed.status--outline {
+    @apply border-[#424242] dark:border-[#616161];
+}
+.status--closed.status--filled {
+    @apply bg-[#e0e0e0] text-[#212121] dark:bg-[#2e2e2e] dark:text-[#cfcfcf];
+}
+
+.status--cancelled {
+    @apply text-[#e84393] dark:text-[#ff8fab];
+}
+.status--cancelled.status--outline {
+    @apply border-[#d81b60] dark:border-[#e84393];
+}
+.status--cancelled.status--filled {
+    @apply bg-[#fce4ec] text-[#ad1457] dark:bg-[#5c1e31] dark:text-[#ffc1cc];
+}
+
+.status--received {
+    @apply text-[#0984e3] dark:text-[#74b9ff];
+}
+.status--received.status--outline {
+    @apply border-[#0652dd] dark:border-[#0984e3];
+}
+.status--received.status--filled {
+    @apply bg-[#e7f0fd] text-[#044289] dark:bg-[#1e3a5f] dark:text-[#a3befd];
+}

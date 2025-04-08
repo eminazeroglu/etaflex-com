@@ -1,0 +1,7 @@
+.text-mute {
+    @apply text-[#7584A9]
+}
+
+.text-muted {
+    @apply text-[#939391]
+}

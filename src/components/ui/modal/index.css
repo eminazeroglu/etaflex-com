@@ -1,0 +1,74 @@
+.ant-modal-footer .ant-btn-primary {
+    @apply bg-green-500 border-none
+}
+
+.custom-modal .ant-modal-footer:has(.custom-btn) {
+    @apply !border-t !border-color !border-solid !pt-[16px]
+}
+
+.ant-modal-content {
+    @apply dark-bg-main !p-0
+}
+
+.custom-modal .ant-modal-header {
+    @apply !bg-gray-200 dark-bg-main !pt-4 !pb-[16px] !pl-4 !pr-14 !mb-0 !border-b !border-color !border-solid
+}
+
+.ant-modal-body {
+    @apply !p-4 !overflow-x-auto
+}
+
+.modal-body-p-0 .ant-modal-body {
+    @apply !p-0
+}
+
+.ant-modal-close {
+    @apply !top-4 my-auto !bg-transparent
+}
+
+.ant-modal-close svg {
+    @apply !text-lg !text-[#636466] theme-text
+}
+
+.ant-modal-title {
+    @apply min-h-[2rem] theme-text flex items-center !font-semibold !text-[18px] !leading-[28px]
+}
+
+.ant-modal-wrap {
+    @apply py-10
+}
+
+.ant-modal-root .ant-modal-mask,
+.ant-modal-root .ant-modal-wrap
+{
+    @apply z-[1051]
+}
+
+.custom-modal.modal-sm {
+    @apply lg:!w-[300px] !w-full
+}
+.custom-modal.modal-md {
+    @apply lg:!w-[500px] !w-full
+}
+.custom-modal.modal-lg {
+    @apply lg:!w-[800px] !w-full
+}
+.custom-modal.modal-xl {
+    @apply lg:!w-[1140px] !w-full
+}
+
+.modal-footer-left {
+    @apply justify-start
+}
+
+.modal-footer-right {
+    @apply justify-end
+}
+
+.modal-footer-center {
+    @apply justify-center
+}
+
+.modal-footer-between {
+    @apply justify-between
+}
